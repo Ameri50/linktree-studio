@@ -4,8 +4,12 @@ import path from "path";
 const assetsDir = "dist/client/assets";
 const files = fs.readdirSync(assetsDir);
 const css = files.find((f) => f.endsWith(".css"));
-const mainJs = files.find((f) => f.startsWith("index-") && f.endsWith(".js") && f.includes("Ce2a5"));
-const entryJs = files.find((f) => f.startsWith("index-") && f.endsWith(".js") && !f.includes("Ce2a5"));
+const mainJs = files.find(
+  (f) => f.startsWith("index-") && f.endsWith(".js") && f.includes("Ce2a5"),
+);
+const entryJs = files.find(
+  (f) => f.startsWith("index-") && f.endsWith(".js") && !f.includes("Ce2a5"),
+);
 
 const html = `<!DOCTYPE html>
 <html lang="es">
