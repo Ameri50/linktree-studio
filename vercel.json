@@ -4,6 +4,10 @@
     "framework": null,
     "routes": [
       {
+        "src": "/assets/(.*)",
+        "dest": "/client/assets/$1"
+      },
+      {
         "src": "/(.*)",
         "dest": "dist/server/assets/server.js"
       }
