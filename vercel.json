@@ -4,8 +4,12 @@
     "framework": null,
     "rewrites": [
       {
+        "source": "/assets/(.*)",
+        "destination": "/assets/$1"
+      },
+      {
         "source": "/(.*)",
-        "destination": "/index.html"
+        "destination": "/api/index"
       }
     ]
   }
